@@ -1,0 +1,17 @@
+Function GetinitFromPath(ByVal strPath As String) As String
+' Returns the rightmost characters of a string upto but not including the rightmost '_'
+' e.g. 'c:\winnt\win.ini' returns 'win.ini'
+
+    If Right$(strPath, 1) <> " " And Len(strPath) > 0 Then
+        GetinitFromPath = GetinitFromPath(Left$(strPath, Len(strPath) - 1)) + Right$(strPath, 1)
+    End If
+End Function
+
+Function GetFilenameFromPath(ByVal strPath As String) As String
+' Returns the rightmost characters of a string upto but not including the rightmost '\'
+' e.g. 'c:\winnt\win.ini' returns 'win.ini'
+
+    If Right$(strPath, 1) <> "\" And Len(strPath) > 0 Then
+        GetFilenameFromPath = GetFilenameFromPath(Left$(strPath, Len(strPath) - 1)) + Right$(strPath, 1)
+    End If
+End Function
