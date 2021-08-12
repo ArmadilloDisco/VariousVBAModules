@@ -1,0 +1,323 @@
+Public Function Num2AlphaNumeric(num As Double) As String
+Select Case num
+Case 1
+Num2AlphaNumeric = "A"
+Case 2
+Num2AlphaNumeric = "B"
+Case 3
+Num2AlphaNumeric = "C"
+Case 4
+Num2AlphaNumeric = "D"
+Case 5
+Num2AlphaNumeric = "E"
+Case 6
+Num2AlphaNumeric = "F"
+Case 7
+Num2AlphaNumeric = "G"
+Case 8
+Num2AlphaNumeric = "H"
+Case 9
+Num2AlphaNumeric = "I"
+Case 10
+Num2AlphaNumeric = "J"
+Case 11
+Num2AlphaNumeric = "K"
+Case 12
+Num2AlphaNumeric = "L"
+Case 13
+Num2AlphaNumeric = "M"
+Case 14
+Num2AlphaNumeric = "N"
+Case 15
+Num2AlphaNumeric = "O"
+Case 16
+Num2AlphaNumeric = "P"
+Case 17
+Num2AlphaNumeric = "Q"
+Case 18
+Num2AlphaNumeric = "R"
+Case 19
+Num2AlphaNumeric = "S"
+Case 20
+Num2AlphaNumeric = "T"
+Case 21
+Num2AlphaNumeric = "U"
+Case 22
+Num2AlphaNumeric = "V"
+Case 23
+Num2AlphaNumeric = "W"
+Case 24
+Num2AlphaNumeric = "X"
+Case 25
+Num2AlphaNumeric = "Y"
+Case 26
+Num2AlphaNumeric = "Z"
+Case 27
+Num2AlphaNumeric = "a"
+Case 28
+Num2AlphaNumeric = "b"
+Case 29
+Num2AlphaNumeric = "c"
+Case 30
+Num2AlphaNumeric = "d"
+Case 31
+Num2AlphaNumeric = "e"
+Case 32
+Num2AlphaNumeric = "f"
+Case 33
+Num2AlphaNumeric = "g"
+Case 34
+Num2AlphaNumeric = "h"
+Case 35
+Num2AlphaNumeric = "i"
+Case 36
+Num2AlphaNumeric = "j"
+Case 37
+Num2AlphaNumeric = "k"
+Case 38
+Num2AlphaNumeric = "l"
+Case 39
+Num2AlphaNumeric = "m"
+Case 40
+Num2AlphaNumeric = "n"
+Case 41
+Num2AlphaNumeric = "o"
+Case 42
+Num2AlphaNumeric = "p"
+Case 43
+Num2AlphaNumeric = "q"
+Case 44
+Num2AlphaNumeric = "r"
+Case 45
+Num2AlphaNumeric = "s"
+Case 46
+Num2AlphaNumeric = "t"
+Case 47
+Num2AlphaNumeric = "u"
+Case 48
+Num2AlphaNumeric = "v"
+Case 49
+Num2AlphaNumeric = "w"
+Case 50
+Num2AlphaNumeric = "x"
+Case 51
+Num2AlphaNumeric = "y"
+Case 52
+Num2AlphaNumeric = "z"
+Case 53
+Num2AlphaNumeric = "@"
+Case 54
+Num2AlphaNumeric = "!"
+Case 55
+Num2AlphaNumeric = "_"
+Case 56
+Num2AlphaNumeric = "?"
+Case 57
+Num2AlphaNumeric = "&"
+Case 58
+Num2AlphaNumeric = "$"
+Case 59
+Num2AlphaNumeric = "#"
+Case 60
+Num2AlphaNumeric = "0"
+Case 61
+Num2AlphaNumeric = "1"
+Case 62
+Num2AlphaNumeric = "2"
+Case 63
+Num2AlphaNumeric = "3"
+Case 64
+Num2AlphaNumeric = "4"
+Case 65
+Num2AlphaNumeric = "5"
+Case 66
+Num2AlphaNumeric = "6"
+Case 67
+Num2AlphaNumeric = "7"
+Case 68
+Num2AlphaNumeric = "8"
+Case 69
+Num2AlphaNumeric = "9"
+
+End Select
+End Function
+
+Public Function AlphaNumeric2Num(chara As String) As Double
+Select Case chara
+Case "A"
+AlphaNumeric2Num = 1
+Case "B"
+AlphaNumeric2Num = 2
+Case "C"
+AlphaNumeric2Num = 3
+Case "D"
+AlphaNumeric2Num = 4
+Case "E"
+AlphaNumeric2Num = 5
+Case "F"
+AlphaNumeric2Num = 6
+Case "G"
+AlphaNumeric2Num = 7
+Case "H"
+AlphaNumeric2Num = 8
+Case "I"
+AlphaNumeric2Num = 9
+Case "J"
+AlphaNumeric2Num = 10
+Case "K"
+AlphaNumeric2Num = 11
+Case "L"
+AlphaNumeric2Num = 12
+Case "M"
+AlphaNumeric2Num = 13
+Case "N"
+AlphaNumeric2Num = 14
+Case "O"
+AlphaNumeric2Num = 15
+Case "P"
+AlphaNumeric2Num = 16
+Case "Q"
+AlphaNumeric2Num = 17
+Case "R"
+AlphaNumeric2Num = 18
+Case "S"
+AlphaNumeric2Num = 19
+Case "T"
+AlphaNumeric2Num = 20
+Case "U"
+AlphaNumeric2Num = 21
+Case "V"
+AlphaNumeric2Num = 22
+Case "W"
+AlphaNumeric2Num = 23
+Case "X"
+AlphaNumeric2Num = 24
+Case "Y"
+AlphaNumeric2Num = 25
+Case "Z"
+AlphaNumeric2Num = 26
+Case "a"
+AlphaNumeric2Num = 27
+Case "b"
+AlphaNumeric2Num = 28
+Case "c"
+AlphaNumeric2Num = 29
+Case "d"
+AlphaNumeric2Num = 30
+Case "e"
+AlphaNumeric2Num = 31
+Case "f"
+AlphaNumeric2Num = 32
+Case "g"
+AlphaNumeric2Num = 33
+Case "h"
+AlphaNumeric2Num = 34
+Case "i"
+AlphaNumeric2Num = 35
+Case "j"
+AlphaNumeric2Num = 36
+Case "k"
+AlphaNumeric2Num = 37
+Case "l"
+AlphaNumeric2Num = 38
+Case "m"
+AlphaNumeric2Num = 39
+Case "n"
+AlphaNumeric2Num = 40
+Case "o"
+AlphaNumeric2Num = 41
+Case "p"
+AlphaNumeric2Num = 42
+Case "q"
+AlphaNumeric2Num = 43
+Case "r"
+AlphaNumeric2Num = 44
+Case "s"
+AlphaNumeric2Num = 45
+Case "t"
+AlphaNumeric2Num = 46
+Case "u"
+AlphaNumeric2Num = 47
+Case "v"
+AlphaNumeric2Num = 48
+Case "w"
+AlphaNumeric2Num = 49
+Case "x"
+AlphaNumeric2Num = 50
+Case "y"
+AlphaNumeric2Num = 51
+Case "z"
+AlphaNumeric2Num = 52
+Case "@"
+AlphaNumeric2Num = 53
+Case "!"
+AlphaNumeric2Num = 54
+Case "_"
+AlphaNumeric2Num = 55
+Case "?"
+AlphaNumeric2Num = 56
+Case "&"
+AlphaNumeric2Num = 57
+Case "$"
+AlphaNumeric2Num = 58
+Case "#"
+AlphaNumeric2Num = 59
+Case "0"
+AlphaNumeric2Num = 60
+Case "1"
+AlphaNumeric2Num = 61
+Case "2"
+AlphaNumeric2Num = 62
+Case "3"
+AlphaNumeric2Num = 63
+Case "4"
+AlphaNumeric2Num = 64
+Case "5"
+AlphaNumeric2Num = 65
+Case "6"
+AlphaNumeric2Num = 66
+Case "7"
+AlphaNumeric2Num = 67
+Case "8"
+AlphaNumeric2Num = 68
+Case "9"
+AlphaNumeric2Num = 69
+
+End Select
+
+End Function
+Public Function String2B70(charstr As String) As Double
+
+Dim leng As Integer
+leng = Len(charstr)
+Dim i As Integer
+Dim char As String
+String2B70 = 0
+For i = 1 To leng
+    char = Mid(charstr, i, 1)
+    String2B70 = String2B70 + (AlphaNumericEncrypt.AlphaNumeric2Num(char) * (70 ^ (leng - i)))
+Next i
+End Function
+
+Public Function B70toString(b70num As Double) As String
+Dim reme As Double
+Dim num As Double
+Dim comp As Double
+Dim i As Integer
+Dim j As Integer
+comp = 0
+i = 0
+Do While comp < b70num
+    comp = 70 ^ i
+    i = i + 1
+Loop
+i = i - 2
+    
+For j = 0 To i
+    comp = b70num / (70 ^ (i - j))
+    reme = Int(comp)
+    B70toString = B70toString & AlphaNumericEncrypt.Num2AlphaNumeric(reme)
+    b70num = b70num - reme * (70 ^ (i - j))
+Next j
+
+End Function
