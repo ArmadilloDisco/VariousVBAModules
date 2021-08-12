@@ -1,0 +1,18 @@
+
+Public Function GPSDistance(olat, olong, dlat, dlong) As Double
+'Input lat and long as degrees
+olat = olat * 3.14159 / 180
+olong = olong * 3.14159 / 180
+dlat = dlat * 3.14159 / 180
+dlong = dlong * 3.14159 / 180
+sinlat1 = Sin(olat)
+sinlat2 = Sin(dlat)
+coslat1 = Cos(olat)
+coslat2 = Cos(dlat)
+cosdel = Cos(olong - dlong)
+r = 3958.756 'Radius of Earth in miles
+avar = (sinlat1 * sinlat2) + coslat1 * coslat2 * cosdel
+acosvar1 = -avar / Sqr(-avar * avar + 1 + 1E-26)
+acosvar = Atn(acosvar1) + 1.570796
+GPSDistance = r * acosvar
+End Function
