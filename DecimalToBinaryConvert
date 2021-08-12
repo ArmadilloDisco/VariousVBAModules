@@ -1,0 +1,44 @@
+Function Dec2Bi(DecNumber As Double)
+Dim i As Double
+Dim y As Double
+Dim m As Double
+Dim B As Double
+Dim chk As Double
+Dim de As Double
+Dim Bs As Double
+Dim dy As Double
+B = 0
+Bs = 0
+m = 1
+x = Abs(DecNumber)
+chk = DecNumber
+i = 1
+y = 1
+de = x - Int(x)
+y = 2 * de
+    Do Until y = 0
+    Bs = (Int(y) / (10 ^ i)) + Bs
+    dy = (y * 10)
+    de = dy - Int(dy)
+    i = i + 1
+    y = 2 * de
+    Loop
+    
+    Do Until m = 0
+        y = 0
+        i = 0
+        Do Until x < y
+        y = 2 ^ (i)
+        i = i + 1
+        Loop
+        i = i - 2
+        x = x - (2 ^ (i))
+        m = x
+        B = B + 10 ^ (i)
+    Loop
+    If (Abs(numb) = chk) Then
+        Dec2Bi = B + Bs
+    Else
+        Dec2Bi = -(B + Bs)
+    End If
+End Function
