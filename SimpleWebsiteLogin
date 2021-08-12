@@ -1,0 +1,25 @@
+Function WebsiteLogOn(UserName As String, PWord As String)
+'This is a generic web page login thru Access, adjust Website Elements as needed
+Dim objIE As InternetExplorer 'special object variable representing the IE browser
+Dim aEle As HTMLLinkElement 'special object variable for an <a> (link) element
+Dim element As HTMLLinkElement
+Set objIE = New InternetExplorerMedium
+On Error GoTo Errorhandler
+objIE.Visible = False
+
+'navigate IE to this web page
+objIE.navigate "https://login.example.com" 'adjust as needed
+Do While objIE.Busy = True Or objIE.READYSTATE <> 4: DoEvents: Loop
+objIE.Document.getElementById("LoginNameTextBox").Value = UserName
+objIE.Document.getElementById("PasswordTextBox").Value = PWord
+Set objInputs = objIE.Document.getElementsByTagName("input")
+For Each element In objInputs
+    If element.id Like "LoginButton" Then
+    element.Click
+    End If
+Next
+MsgBox ("Log In successful.")
+Exit Function
+Errorhandler:
+MsgBox ("Error while attempting log in,try again or log in manually in IE.")
+End Function
